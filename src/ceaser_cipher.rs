@@ -1,5 +1,8 @@
+use wasm_bindgen::prelude::*;
+
 // ceaser cypher encryption formula En(x) = (x+n)mod26
 #[allow(dead_code)]
+#[wasm_bindgen]
 pub fn encrypt(plain_text: &str, key: u8) -> String {
     let mut result = String::from("");
     for element in plain_text.chars() {
@@ -18,7 +21,10 @@ pub fn encrypt(plain_text: &str, key: u8) -> String {
     return result;
 }
 // ceaser cypher decryption formula En(x) = (x-n)mod26
+
 #[allow(dead_code)]
+#[wasm_bindgen]
+
 pub fn decrypt(plain_text: &str, key: u8) -> String {
     let mut result = String::from("");
     for element in plain_text.chars() {
