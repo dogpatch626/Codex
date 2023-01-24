@@ -1,0 +1,11 @@
+{
+  "name": "rust_crypto",
+  "version": "0.1.0",
+  "files": [
+    "rust_crypto_bg.wasm",
+    "rust_crypto.js",
+    "rust_crypto.d.ts"
+  ],
+  "main": "rust_crypto.js",
+  "types": "rust_crypto.d.ts"
+}
